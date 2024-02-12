@@ -1,0 +1,167 @@
+@font-face {
+  font-family: Love;
+  src: url("maylove/Maylove.ttf")
+}
+@font-face {
+  font-family: Loveletter;
+  src: url("winter_storm/Winter\ Storm.ttf")
+}
+* {
+    margin:  0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background: #ef233c;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navBar {
+  background-color: #d90429;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes title {
+  0% {
+  color: white;
+  transform: rotate(0deg);
+  }
+  33% {
+  transform: rotate(-20deg);
+  }
+  66% {
+  transform: rotate(360deg);
+  }
+  100% {
+    color: white(0, 0, 0);
+    transform: rotate(0deg);
+    }
+  }
+.title {
+  margin-left: 50px;
+  font-family: love;
+  font-size:xxx-large;
+  color: white;
+}
+.title:hover {
+  animation-name: title;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+.introContainer {
+  display: flex; 
+  flex-direction: row; 
+}
+
+.introHeader, .introImage {
+  flex:  1; 
+  margin:  10px;
+  font-family: Loveletter;
+  font-size: xx-large;
+  color: pink;
+  overflow-wrap: break-word;
+  height: fit-content;
+}
+
+.introImage {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+@keyframes nav {
+  0% {
+  border: solid 5px white;
+  }
+  33% {
+  border: solid 5px rgb(13, 255, 0);
+  }
+  66% {
+  border: solid 5px rgb(0, 38, 255);
+  }
+  100% {
+  border: solid 5px rgb(247, 0, 255);
+    }
+  }
+.whyYou {
+  margin-left: 100px;
+  font-family: love;
+  font-size:xxx-large;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #ef233c;
+  border-radius: 20px 20px 20px 20px;
+  border: solid 5px white;
+}
+  .whyYou:hover {
+    animation-name: nav;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  .introHeader:hover {
+  background-image: linear-gradient(
+    -225deg,
+    pink 0%,
+    pink 29%,
+    rgb(255, 110, 134) 67%,
+    rgb(255, 110, 134) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: pink;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+  img {
+    border: 5px solid rgb(254, 253, 253);
+  }
+
+  img:hover {
+    animation-name: nav;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  .startHere {
+      font-family: love;
+      font-size:xxx-large;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background: #9b0012;
+      border-radius: 20px 20px 20px 20px;
+      border: solid 5px white;
+      margin-top: 200px;
+      position: absolute;
+      left: 500px;
+      top: 250px;
+    }
