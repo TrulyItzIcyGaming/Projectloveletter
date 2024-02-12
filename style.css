@@ -140,6 +140,8 @@ a {
 }
   img {
     border: 5px solid rgb(254, 253, 253);
+    height: 500px;
+    width: 500px;
   }
 
   img:hover {
@@ -149,19 +151,3 @@ a {
     animation-direction: alternate;
     animation-iteration-count: infinite;
   }
-  .startHere {
-      font-family: love;
-      font-size:xxx-large;
-      color: white;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 20px;
-      padding-right: 20px;
-      background: #9b0012;
-      border-radius: 20px 20px 20px 20px;
-      border: solid 5px white;
-      margin-top: 200px;
-      position: absolute;
-      left: 500px;
-      top: 250px;
-    }
